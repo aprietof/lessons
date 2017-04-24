@@ -1,13 +1,13 @@
-#JQuery
+# JQuery
 
-##What is JQuery?
+## What is JQuery?
 
 jQuery is a fast, small, and awesome JavaScript library. It makes things like finding and manipulating HTML elements, event handling, animation much simpler, it is very easy to use and works across a multitude of browsers. Basically, it's a library that makes using javascript way easier! (write less code and do more)
 
 
-##Getting Started
+## Getting Started
 
-###Step 1
+### Step 1
 Add JQuery to your HTML document A.K.A **"The DOM"** using a script tag.
 
 ```html
@@ -30,7 +30,7 @@ At the bottom of the body.
 </html>
 ```
 
-###Step 2
+### Step 2
 
 Create a new file for your javascript (you can call this file anything you want as long as it has a `.js` extension) 
 
@@ -45,8 +45,8 @@ add it to your HTML document after the JQuery script tag
 <script src="application.js"></script>
 ```
 
-###Step 3 
-###Set up JQuery to wait for the "DOM Ready Signal"
+### Step 3 
+### Set up JQuery to wait for the "DOM Ready Signal"
 
 We want our JQuery to run once all the HTML elements have been loaded, when that happens the DOM sends out a signal saying I'M READY!!! We specify that we want to wait for that signal by adding our code inside of a document ready function inside our javascript file:
 
@@ -58,7 +58,7 @@ $(document).ready(function(){
 });
 ```
 
-##Selectors and Syntax
+## Selectors and Syntax
 jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors. To select an element we use the **"$"** dollar sign syntax:
 
 1. Start with a dollar sign
@@ -86,7 +86,7 @@ $('li')
 
 You get the point... 
 
-##Selecting specific DOM elements using ID and Classes
+## Selecting specific DOM elements using ID and Classes
 
 If we only use element selectors like `$('h1')` we will select all h1 elements inside the page, sometimes we don't want to select every single element in the document, so how do we select an specific element?
 
@@ -119,7 +119,7 @@ In this HTML document we have:
 - 2 `<h1>` Elements
 - 3 `<p>` Elements
 
-###Selecting every element of a kind
+### Selecting every element of a kind
 
 Selecting all h1 elements:
 
@@ -127,7 +127,7 @@ Selecting all h1 elements:
 $('h1') // => this will select all h1 tags (2 elements selected)
 ```
 
-###Selecting an specific element by its `class` (use "`.`" like in css )
+### Selecting an specific element by its `class` (use "`.`" like in css )
 
 Selecting a p element with a class of "food"
 
@@ -136,7 +136,7 @@ $('.food') // => this will select the second p tag and omit the first and last p
 ```
 
 
-###Selecting an specific element by its `id` (use "`#`" like in css )
+### Selecting an specific element by its `id` (use "`#`" like in css )
 
 Selecting a p element with an id of "dessert"
 
@@ -144,11 +144,11 @@ Selecting a p element with an id of "dessert"
 $('#dessert') // => this will select the third p tag and omit the first two p elements (1 element selected)
 ```
 
-##Modifying Elements
+## Modifying Elements
 
 Once we have selected an element we can extract and/or modify its content by using different methods:
 
-##`.text()`
+## `.text()`
 
 With this method we can find out what text is inside of the selected element and also we can modify it.
 
@@ -187,7 +187,7 @@ Now if you reload the page your HTML will change to:
 And that is how we select and modify text inside elements.
 
 
-##`.css()`
+## `.css()`
 
 You can retrieve and edit css properties of the selected element(s) by using this method.
 
@@ -205,7 +205,7 @@ $('p').css('color', 'red'); // => this will change the color of the selected tag
 
 Awesome right!? That's JQuery. In future lesson we will learn more about all the different methods we can use to make our website more dynamic an fun.
 
-##Resources
+## Resources
 
 * [JQuery Api](http://api.jquery.com/)
 * [Code Academy's JQuery Lessons](https://www.codecademy.com/learn/jquery)
