@@ -203,7 +203,7 @@ Change `<p>` tag color to red:
 $('p').css('color', 'red'); // => this will change the color of the selected tag to red.
 ```
 
-Awesome right!? That's JQuery. In future lesson we will learn more about all the different methods we can use to make our website more dynamic an fun.
+Awesome right!? That's JQuery. In future lessons we will learn more about all the different methods we can use to make our website more dynamic an fun.
 
 ## Resources
 
