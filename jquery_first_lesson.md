@@ -143,6 +143,13 @@ Selecting a p element with an id of "dessert"
 ```js
 $('#dessert') // => this will select the third p tag and omit the first two p elements (1 element selected)
 ```
+-
+
+***NOTE:*** *You can also select elements inside other elements by using spaces.*
+
+```js
+$('.someClass p') // => This will select a 'p' element inside an element with a class of 'someClass'
+```
 
 ## Modifying Elements
 
