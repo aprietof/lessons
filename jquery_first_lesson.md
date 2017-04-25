@@ -161,7 +161,7 @@ With this method we can find out what text is inside of the selected element and
 
 Let's see how it works:
 
-If you have a p element with a class of 'food':
+If you have a `<p>` element with a class of "food":
 
 ```html
 <p class="food">My favorite food is salads</p>
@@ -182,7 +182,7 @@ $('.food').text(); // => 'My favorite food is salads'
 If you want to modify its text content you can just write a different string inside of the parentheses using quotation marks like this:
 
 ```js
-$('p').text('My favorite food is tacos');
+$('.food').text('My favorite food is tacos');
 ```
 
 Now if you reload the page your HTML will change to:
