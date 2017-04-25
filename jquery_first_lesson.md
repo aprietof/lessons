@@ -161,34 +161,34 @@ With this method we can find out what text is inside of the selected element and
 
 Let's see how it works:
 
-If you have a p element:
+If you have a p element with a class of 'food':
 
 ```html
-<p>I love cats</p>
+<p class="food">My favorite food is salads</p>
 ```
 
 and you select this element using JQuery,
 
 ```js
-$('p')
+$('.food')
 ```
 
 then use the `.text()` method to extract its text content:
 
 ```js
-$('p').text(); // => 'I love cats'
+$('.food').text(); // => 'My favorite food is salads'
 ```
 
-If you want to modify its text content you can just write a different string inside of the parenthesis using quotation marks like this:
+If you want to modify its text content you can just write a different string inside of the parentheses using quotation marks like this:
 
 ```js
-$('p').text('I love Dogs');
+$('p').text('My favorite food is tacos');
 ```
 
 Now if you reload the page your HTML will change to:
 
 ```html
-<p>I love Dogs</p>
+<p class="food">My favorite food is tacos</p>
 ```
 
 And that is how we select and modify text inside elements.
