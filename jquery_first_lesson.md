@@ -2,20 +2,18 @@
 
 ## What is JQuery?
 
-jQuery is a fast, small, and awesome JavaScript library. It makes things like finding and manipulating HTML elements, event handling, animation much simpler, it is very easy to use and works across a multitude of browsers. Basically, it's a library that makes using javascript way easier! (write less code and do more)
-
+jQuery is a fast, small, and awesome JavaScript library that makes things like finding and manipulating HTML elements, event handling, animation much simpler than they would would be in plain javascript. Jquery is very easy to use and works across most modern web browsers. In an nutshell, it's a library that makes using javascript easier and more enjoyable! 
 
 ## Getting Started
 
-### Step 1
-Add JQuery to your HTML document using a script tag.
+### Step 1: Load JQuery
+First, we need to get JQuery loaded up on to your page. Add JQuery to your HTML document using a script tag:
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 ```
 
-At the bottom of the body.
-
+We do this at the bottom of the `<body>`:
 
 ```html
 <!DOCTYPE html>
@@ -30,43 +28,44 @@ At the bottom of the body.
 </html>
 ```
 
-### Step 2
+### Step 2: Create and connect a javascript file
 
-Create a new file for your javascript (you can call this file anything you want as long as it has a `.js` extension) 
+Create a new file where you'll be writing your custom jquery and javascript (you can call this file anything you want as long as it has a `.js` extension) 
 
 ```
 touch application.js
 ```
 
-add it to your HTML document after the JQuery script tag
+Cpnnect it to your HTML document after loading JQuery, using a `<script>` tag:
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="application.js"></script>
 ```
 
-### Step 3 
-### Set up JQuery to wait for the "DOM Ready Signal"
+### Step 3: Set up JQuery to wait for the "DOM Ready Signal"
 
 > *What is the DOM ? When you open a web page in your browser, the browser retrieves the page’s HTML text and parses it. The browser builds up a model of the document’s structure and then uses this model to draw the page on the screen.*
 
-We want our JQuery to run once all the HTML elements have been loaded, when that happens the DOM sends out a signal saying I'M READY!!! We specify that we want to wait for that signal by adding our code inside of a document ready function inside our javascript file:
+We want our JQuery to run once all the HTML elements have been loaded. When that happens, the DOM sends out a signal saying I'M READY!!! We specify that we want to wait for that signal by adding our code inside of a `$(document).ready()` function inside our javascript file:
 
 **`application.js`**
 
 ```js
 $(document).ready(function(){
-  // code here
+  // This code will run when the HTML is fully loaded
 });
 ```
+You're now fully set up and ready to write your custom JQuery!
 
 ## Selectors and Syntax
-jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors. To select an element we use the **"$"** dollar sign syntax:
+
+jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. Selection is based on the existing CSS Selectors (so think back to how you selected HTML elements when you learned css!). To select an element we use the **"$"** dollar sign syntax:
 
 1. Start with a dollar sign
-2. Open parenthesis 
-3. Using quotation marks we define the element
-4. Close parenthesis
+2. Open parentheses 
+3. Using quotation marks, define the element you're looking for
+4. Close parentheses
 
 So to select an `<h1>` element:
 
@@ -88,11 +87,11 @@ $('li')
 
 You get the point... 
 
-## Selecting specific DOM elements using ID and Classes
+## Selecting specific DOM elements using IDs and Classes
 
-If we only use element selectors like `$('h1')` we will select all h1 elements inside the page, sometimes we don't want to select every single element in the document, so how do we select an specific element?
+If we only use element selectors like `$('h1')` we will select **all** h1 elements inside the page. But sometimes we don't want to select every single element in the document, so how do we select a specific element?
 
-Well, we use classes and ids, the same way we did to style elements with css we can select them by targeting their classes and ids.
+We use **classes** and **ids**! In the same way that we can style elements with css, we can select them by targeting their classes and ids.
 
 Let's look at the following website and its elements:
 
@@ -211,7 +210,7 @@ Change `<p>` tag color to red:
 $('p').css('color', 'red'); // => this will change the color of the selected tag to red.
 ```
 
-Awesome right!? That's JQuery. In future lessons we will learn more about all the different methods we can use to make our website more dynamic an fun.
+Awesome, right!? That's JQuery. In future lessons we will learn more about all the different methods we can use to make our website more dynamic and fun.
 
 ## Resources
 
