@@ -8,7 +8,7 @@ jQuery is a fast, small, and awesome JavaScript library. It makes things like fi
 ## Getting Started
 
 ### Step 1
-Add JQuery to your HTML document A.K.A **"The DOM"** using a script tag.
+Add JQuery to your HTML document using a script tag.
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -47,6 +47,8 @@ add it to your HTML document after the JQuery script tag
 
 ### Step 3 
 ### Set up JQuery to wait for the "DOM Ready Signal"
+
+> *What is the DOM ? When you open a web page in your browser, the browser retrieves the page’s HTML text and parses it. The browser builds up a model of the document’s structure and then uses this model to draw the page on the screen.*
 
 We want our JQuery to run once all the HTML elements have been loaded, when that happens the DOM sends out a signal saying I'M READY!!! We specify that we want to wait for that signal by adding our code inside of a document ready function inside our javascript file:
 
